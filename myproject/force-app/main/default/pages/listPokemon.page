@@ -1,0 +1,16 @@
+<apex:page controller="ListPokemonController">
+  <!-- Page Header -->
+  <apex:sectionHeader title="Pokemon List" subtitle="List all pokemon" />
+
+  <apex:pageBlock>
+    <apex:pageBlockTable value="{!pokemons}" var="pokemon">
+      <apex:column value="{!pokemon.ID__c}" />
+      <apex:column value="{!pokemon.Name}" />
+      <apex:column value="{!pokemon.Vida__c}" />
+    </apex:pageBlockTable>
+  </apex:pageBlock>
+
+  <apex:form>
+    <apex:commandButton value="Go to Pokemon Form" action="{!goToPokemon}" />
+</apex:form>
+</apex:page>

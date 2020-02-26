@@ -1,0 +1,10 @@
+<aura:component>
+    <div>Componente 2</div>
+    <aura:attribute name="output" type="string"/>
+    <Lightning:select aura:id="select" name="select" label="select a number" onchange="{!c.selectNumber}">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    </Lightning:select>
+    {!v.output}
+</aura:component>	
